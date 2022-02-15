@@ -1,0 +1,63 @@
+<div class="bootstrap-wrapper">
+
+
+    <div class="container">
+        <div class="row" style="margin: top 20px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <div class="container text-center">
+                        ,<img src="../../../assets/update.jpg" alt="" />
+                    </div>
+
+                    <h1 class="text-center">Update Here!..</h1>
+
+                    <form (ngSubmit)="formSubmit()">
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>EnNo</mat-label>
+                            <input [(ngModel)]=" add.enNo" name="EnNo" matInput placeholder="Enter here" />
+                        </mat-form-field>
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>StudentName</mat-label>
+                            <input [(ngModel)]="add.studentName" name="StudentName" matInput placeholder="Enter here">
+
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Fathername</mat-label>
+                            <input [(ngModel)]="add.fatherName" name="Fathername" matInput placeholder="Enter here" />
+
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Sirname</mat-label>
+                            <input [(ngModel)]="add.sirName" name="sirname" matInput placeholder="Enter here" />
+
+
+
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input [(ngModel)]="add.email" name="email" matInput placeholder="Enter here"><br>
+
+                        </mat-form-field>
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>Password</mat-label>
+                            <input [(ngModel)]="add.moNo" name="mono" matInput placeholder="Enter here">
+
+                        </mat-form-field>
+                        <div class="container">
+
+                            <button mat-raised-button color="primary">Update</button>
+
+
+                        </div>
+
+                    </form>
+                </mat-card>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>

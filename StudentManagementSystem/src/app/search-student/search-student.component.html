@@ -1,0 +1,35 @@
+<H2>You can search any student by using ID here..</H2>
+<div class="bootstrap-wrapper">
+
+
+    <div class="container">
+        <div class="row" style="margin: top 20px;">
+            <div class="col-md-6 offset-md-3">
+                <mat-card>
+                    <div class="container text-center">
+                        ,<img src="../../../assets/logo.png" alt="" />
+                    </div>
+
+                    <h1 class="text-center">SEARCH HERE!..</h1>
+                    {{search|json}}
+                    
+                    <form (ngSubmit)="formSubmit1()">
+
+                        <mat-form-field class="full-width" appearance="outline">
+                            <mat-label>EnNo</mat-label>
+                            <input [(ngModel)]="search.enNo" name="EnNo" matInput placeholder="Enter here" />
+                        </mat-form-field>
+                        <div class="container text-center">
+                            <button type="submit" mat-raised-button color='primary'>Search</button>
+              
+                          </div>
+
+                        </form>
+                </mat-card>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
